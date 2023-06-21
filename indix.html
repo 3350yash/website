@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <nav>
+        <div class="logo">
+            <img src="C:\Users\yash3\OneDrive\Desktop\phone web\img\Picsart_23-06-19_14-35-27-559.png">
+
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="file:///C:/Users/yash3/OneDrive/Desktop/phone%20web/indix.html"><b>Phone 14 pro</b></a></li>
+                <li><a href="file:///C:/Users/yash3/OneDrive/Desktop/watch%20web/indix.html"><b>Watch Ultra</b></a></li>
+                <li><a href="file:///C:/Users/yash3/OneDrive/Desktop/airpods%20pro/indix.html"><b>Airpods</b></a></li>
+                <li><a href="file:///C:/Users/yash3/OneDrive/Desktop/vision%20pro/indix.html"><b>Vision pro</b></a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="inf">
+        <div class="over">
+
+        </div>
+        <img src="C:\Users\yash3\OneDrive\Desktop\phone web\img\Girl-wearing-Apple-Vision-Pro.png" class="mobile">
+        <div id="circle">
+            <div class="feature one">
+                <im  src="#">
+                <div>
+                    <h1>vision pro</h1>
+                    <h1>₹2,86,608.53</h1>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="C:\Users\yash3\OneDrive\Desktop\phone web\img\pngwing.com (80).png">
+                <div>
+                    <h1>Coming soon</h1>
+                   
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="C:\Users\yash3\OneDrive\Desktop\phone web\img\pngwing.com (81).png">
+                <div>
+                    <h1>Coming soon</h1>
+                    
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="C:\Users\yash3\OneDrive\Desktop\phone web\img\battery.png">
+                <div>
+                    <h1>Coming soon</h1>
+                    
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="con">
+        <img src="C:\Users\yash3\OneDrive\Desktop\phone web\img\pngwing.com (84).png" id="upbtn">
+        <h2>feature</h2>
+        <img src="C:\Users\yash3\OneDrive\Desktop\phone web\img\pngwing.com (84).png" id="downbtn">
+    </div>
+  </div>
+    
+
+  <script>
+
+    var circle=document.getElementById("circle");
+    var upbtn=document.getElementById("upbtn");
+    var downbtn=document.getElementById("downbtn");
+
+    var rotatevalue = circle.style.transform;
+    var rotatesum;
+
+    upbtn.onclick=function(){
+        rotatesum = rotatevalue + "rotate(-90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue=rotatesum;
+    }
+
+    downbtn.onclick=function(){
+        rotatesum = rotatevalue + "rotate(90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue=rotatesum;
+    }
+  </script>
+</body>
